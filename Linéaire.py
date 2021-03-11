@@ -106,7 +106,7 @@ model1 = tf.keras.Sequential([
 print('#####################################################################################################')	
 print('ENTRAINEMENT')
 print('#####################################################################################################')
-model1.compile(optimizer='Adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),metrics=['acc'])
+model1.compile(optimizer='Adam', loss=tf.keras.losses.hinge(),metrics=['acc'])
 model1.fit(train_dataset,epochs=100)
 
 ############################################################################################################
