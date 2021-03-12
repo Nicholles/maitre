@@ -1,22 +1,9 @@
+########################################################################################
 '''
 Description:
-
-####Format dataset########################################################################################
-dataset=["taille","extension","annee_derniere_modif",label]
-
-
-####Affichage dataset tensorflow##########################################################################
-for elem in dataset:
-	print(elem)
-	
-####Affichage de 4 lots######################################################################################
-for batch in batch_dataset.take(4):
-	print([arr.numpy() for arr in batch])
-
-####Activer environnement virtuel#########################################################################
-source ./venv/bin/activate
+Implémente l'entraînement et l'évaluation d'un algorithme de machine learning
 '''
-
+########################################################################################
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
